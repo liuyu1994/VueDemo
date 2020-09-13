@@ -71,11 +71,11 @@ export const constantRoutes = [
         meta: {title: '库存', icon: 'table'}
       },
       {
-        path: 'tree',
-        name: 'Tree',
-        hidden: true,
-        component: () => import('@/views/tree/index'),
-        meta: {title: 'Tree', icon: 'tree'}
+        path: 'storeHouse',
+        name: 'storeHouse',
+        hidden: false,
+        component: () => import('@/views/table/detailed/storeHouseQuery'),
+        meta: {title: '库存报表查询', icon: 'tree'}
       },
       {
         path: 'nuclearList',
