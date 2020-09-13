@@ -1,7 +1,6 @@
 <template>
   <div style="margin-left: 2%">
     <br>
-    <span>头上一片晴天，心中一个想念</span>
     <el-divider content-position="left">查询条件</el-divider>
     <br>
     <el-form :inline="true" :model="searchMap" class="demo-form-inline">
@@ -33,6 +32,7 @@
             :data="tableData"
             border
             style="width: 100%">
+            <el-table-column label="物料信息" align="center">
             <el-table-column
               prop="id"
               label="序号"
@@ -71,6 +71,8 @@
               label="计量单位"
               align="center">
             </el-table-column>
+            </el-table-column>
+            <el-table-column label="库存数据" align="center">
             <el-table-column
               prop="a1"
               label="核注清单库存A1"
@@ -114,6 +116,7 @@
               prop="address"
               label="实盘时间"
               align="center">
+            </el-table-column>
             </el-table-column>
           </el-table>
         </div>
@@ -210,7 +213,7 @@ export default {
 .el-table__header th {
   padding: 0;
   height: 30px;
-  line-height: 80px;
+  line-height: 50px;
 }
 
 .el-table__body tr,
